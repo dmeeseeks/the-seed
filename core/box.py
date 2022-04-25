@@ -1,4 +1,3 @@
-import json
 from typing import List
 from core.task import Task
 
@@ -41,15 +40,4 @@ class Box:
         Parameters:
             file_name: the file name
         '''
-        abilities = []
-        for ability in self.abilities:
-            abilities.append({
-                'id': ability.id,
-                'alg': ability.algorithm.name,
-                'w': ability.weight
-            })
-        with open(file_name, 'w') as f:
-            f.write(json.dumps({
-                'id': self.id,
-                'abls': abilities
-            }))
+        pass

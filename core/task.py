@@ -13,12 +13,12 @@ class Task:
     algorithm: Algorithm
     ''' The algorithm that the ability follows. '''
 
-    weight: list
-    ''' The weight of the model in learning process. '''
+    weights: list
+    ''' The weights of the model in learning process. '''
 
     def __init__(self, id: str):
         self.id = id
-        self.weight = []
+        self.weights = []
 
     def with_id(self, id: str):
         ''' Modifies the identity of the ability. '''
@@ -35,7 +35,7 @@ class Task:
         self.algorithm = algorithm
         return self
 
-    def with_weight(self, weight: list):
-        ''' Modifies the weight of the model in learning process. '''
-        self.weight = weight
+    def with_weights(self, weights: list):
+        ''' Modifies the weights of the model in learning process. '''
+        self.weights = weights
         return self

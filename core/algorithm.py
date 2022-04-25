@@ -37,3 +37,8 @@ class Algorithm:
             The result of process.
         '''
         pass
+
+    @property
+    def model(self) -> any:
+        ''' Returns the model associated with the algorithm. '''
+        pass
